@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: url(./images/bg-top.svg);
+}
+
+#container {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    margin-top: 50px;
+
+}
+
+.grid-item-left {
+    width: 300px;
+    height: 430px;
+    border: none;
+    padding: 30px;
+    margin-top: 70x;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1px 5px 5px grey;
+    color: rgb(79, 79, 79);
+}
+
+.grid-item-left button {
+    width: 300px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: hsl(237, 63%, 64%);
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 17px;
+}
+
+.grid-item-left button:hover {
+    width: 300px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: purple;
+    border: none;
+    color: hsl(237, 63%, 64%);
+    background-color: white;
+    border: solid 1px silver;
+
+}
+
+.grid-item-right {
+    width: 300px;
+    height: 430px;
+    padding: 30px;
+    margin-top: 70x;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1px 5px 5px grey;
+    color: rgb(79, 79, 79);
+}
+
+.grid-item-right button {
+    width: 300px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: hsl(237, 63%, 64%);
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-size: 17px;
+}
+
+.grid-item-right button:hover {
+    width: 300px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: purple;
+    border: none;
+    color: hsl(237, 63%, 64%);
+    background-color: white;
+    border: solid 1px silver;
+    font-size: 17px;
+}
+
+
+.grid-item-center {
+    width: 300px;
+    height: 460px;
+    border: none;
+    padding: 30px;
+    margin-top: -10px;
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1px 5px 5px grey;
+    color: white;
+}
+
+.grid-item-center button {
+    width: 300px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    color: hsl(237, 63%, 64%);
+    font-size: 17px;
+}
+
+.grid-item-center button:hover {
+    width: 300px;
+    height: 45px;
+    border-radius: 5px;
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border: none;
+    color: white;
+    border: solid 1px white;
+}
+
+.price {
+    text-align: center;
+}
+
+.anually,
+.monthly {
+    font-weight: bolder;
+    color: rgb(79, 79, 79);
+    ;
+
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider.round {
+    border-radius: 30px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(237, 63%, 64%);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: hsl(237, 63%, 64%);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px hsl(237, 63%, 64%);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.d-none {
+    display: none;
+    font-size: 50px;
+}
+
+.d-block {
+    font-size: 50px;
+}
+
+.d-block span,
+.d-none span {
+    font-size: 30px;
+    padding: 5px;
+    vertical-align: 20%;
+}
+
+hr {
+    color: white;
+}
+
+h1,
+p {
+    border-bottom: 1px solid silver;
+    padding: 10px;
+}
